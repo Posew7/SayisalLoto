@@ -1,5 +1,6 @@
 package com.posew7.sayisalloto.mb;
 
+import com.posew7.sayisalloto.entity.Loto;
 import com.posew7.sayisalloto.session.LotoFacade;
 import java.util.Arrays;
 import java.util.Random;
@@ -135,6 +136,22 @@ public class LotoMB {
         d = sayilar[3];
         e = sayilar[4];
         f = sayilar[5];
+
+        Loto l = new Loto();
+
+        l.setA(a);
+        lotoFacade.create(l);
+        l.setB(a);
+        lotoFacade.create(l);
+        l.setC(a);
+        lotoFacade.create(l);
+        l.setD(a);
+        lotoFacade.create(l);
+        l.setE(a);
+        lotoFacade.create(l);
+        l.setF(a);
+
+        lotoFacade.create(l);
 
         return "";
     }
